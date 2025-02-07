@@ -10,11 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            VStack(spacing: 0) {
-                Color(.white)
-                Color(.blue)
-                Color(.red)
-            }
+            LinearGradient(colors: [.white, .blue,.red], startPoint: .topLeading, endPoint: .bottomTrailing )
             Text("Tanya is the best!")
                 .fontWeight(.bold)
                 .font(.title)
